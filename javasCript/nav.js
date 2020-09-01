@@ -4,14 +4,23 @@ var Boton4=document.getElementById('boton4')
 
 function desplegarBoton4 (){
 	Botonlist4.classList.add('mostrar');
-
 };
-
 function ocultarBoton4 (){
 	Botonlist4.classList.remove('mostrar');
-
 };
-
 
 boton4.addEventListener("mouseover",desplegarBoton4,true);
 boton4.addEventListener("mouseout",ocultarBoton4,true);
+
+/*MenuResponsive*/
+
+var IconoMenuMovil = document.getElementById("botonmenu");
+
+var Nav = document.getElementById("Nav");
+
+var BotonesNav = document.getElementById("ulNav");
+
+function desplegarmenu(){
+	BotonesNav.classList.add('activarNav');
+};
+IconoMenuMovil.addEventListener("click", desplegarmenu, true);
